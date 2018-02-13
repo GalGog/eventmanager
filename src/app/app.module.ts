@@ -5,8 +5,7 @@ import { FormioAppConfig } from 'angular-formio';
 import { FormioAuthService, FormioAuthConfig } from 'angular-formio/auth';
 import { AuthConfig, AppConfig } from '../config';
 import { AuthModule } from './auth/auth.module';
-
-
+import { EventModule } from './event/event.module';
 
 
 import { AppComponent } from './app.component';
@@ -35,6 +34,10 @@ import { HeaderComponent } from './header/header.component';
       {
         path: 'auth',
         loadChildren: () => AuthModule
+      },
+      {
+        path: 'event',
+        loadChildren: () => EventModule
       }
     ])
   ],
