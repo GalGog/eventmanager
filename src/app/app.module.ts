@@ -1,7 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
+import { FormioAppConfig } from 'angular-formio';
+import { FormioAuthService, FormioAuthConfig } from 'angular-formio/auth';
+import { AuthConfig, AppConfig } from '../config';
+import { AuthModule } from './auth/auth.module';
 
 
 
